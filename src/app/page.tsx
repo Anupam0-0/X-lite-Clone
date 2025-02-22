@@ -1,11 +1,26 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import ModeToggle from "@/components/ModeToggle";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
-
-export default function Home() {
+const page = () => {
   return (
-    <div className="m-4">
-      hello
+    <div>
+      page
+
+      <br />
+      
 
     </div>
   );
-}
+};
+
+export default page;
