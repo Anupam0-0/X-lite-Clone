@@ -15,10 +15,7 @@ const page = () => {
   return (
     <div>
       page
-
       <br />
-      
-
     </div>
   );
 };
