@@ -17,7 +17,7 @@ async function Sidebar () {
   const user = await getUserById(authUser.id);
   if (!user) return null; // Fix: return null if user is not found
 
-  console.log(user)
+  // console.log(user)
 
   return (
     <div className="sticky top-24">

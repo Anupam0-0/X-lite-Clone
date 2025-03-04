@@ -89,7 +89,7 @@ export const CreatePost =  () => {
                 Photo
               </Button>
             </div>
-            <Button variant='secondary' onClick={() => toast.success('Here\'s a toast :D', {icon: '🍞'})}>
+            <Button className='hidden md:block' variant='secondary' onClick={() => toast.success('Here\'s a toast :D', {icon: '🍞'})}>
               Click for toast &nbsp; :)
             </Button>
             <Button
