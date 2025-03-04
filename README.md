@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## About the Project
+
+X-lite-Clone aims to replicate the functionalities of the X, formerly known as Twitter.
+
+
+### Built With
+
+- [Next.js](https://nextjs.org/)
+- [Clerk](https://clerk.dev/)
+- [Prisma](https://www.prisma.io/)
+- [Neon](https://neon.tech/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to set up and run the project locally.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (version 14 or higher)
+- npm or yarn package manager
+- PostgreSQL database
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository:**
 
-## Learn More
+   ```bash
+   git clone https://github.com/Anupam0-0/X-lite-Clone.git
+   cd X-lite-Clone
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   Using npm:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+   Or using yarn:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   yarn install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Set up environment variables:**
+
+   Create a `.env` file in the root directory and add the following variables:
+
+   ```env
+   DATABASE_URL=your_postgresql_database_url
+   CLERK_API_KEY=your_clerk_api_key
+   NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_frontend_api
+   ```
+
+   Replace `your_postgresql_database_url`, `your_clerk_api_key`, and `your_clerk_frontend_api` with your actual credentials.
+
+4. **Initialize the database:**
+
+   Run the following command to apply database migrations:
+
+   ```bash
+   npx prisma migrate dev
+   ```
+
+### Running the Application
+
+1. **Start the development server:**
+
+   Using npm:
+
+   ```bash
+   npm run dev
+   ```
+
+   Or using yarn:
+
+   ```bash
+   yarn dev
+   ```
+
+2. **Access the application:**
+
+   Open your browser and navigate to `http://localhost:3000`.
+
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
