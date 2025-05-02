@@ -189,7 +189,8 @@ export async function isFollowing(userId: string) {
       },
     });
 
-    return !!follow;
+    //  !!{} => true, !!null => false
+    return !!follow;  
   } catch (error) {
     console.error("Error checking follow status:", error);
     return false;
